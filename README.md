@@ -3,10 +3,10 @@
 I'm taking on the #100DaysOfCode challenge, coding daily in **Rust** and **Python** to build skills and projects. Follow my progress here!
 
 ## Goals
-- Learn Rust fundamentals (e.g., ownership, concurrency).
+- Learn Rust.
 - Build Python projects (e.g., scripts, data analysis).
 - Commit code daily for 100 days.
-- Share updates on [X or other platforms, if you plan to].
+- Share updates on Github.
 
 ## Structure
 - `rust/`: Rust projects and exercises.
