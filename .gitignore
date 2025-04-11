@@ -1,0 +1,14 @@
+# Rust
+target/
+*.rs.bk
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.pyo
+*.pyd
+
+# General
+.DS_Store
+*.log
