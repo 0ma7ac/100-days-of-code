@@ -1,3 +1,5 @@
+use crate::Clicks::{DoubleClick, ZeroClick, TripleClick};
+
 // Day 3: Exploring Rust functions
 fn main() {
     #[derive(Debug)]
@@ -22,6 +24,9 @@ fn main() {
     let age = 4;
     let omar = Person{name, age};
     println!("{:?}", omar);
+    click(TripleClick);
+
+
 }
 
 fn add(a: i32, b: i32) -> i32 {
@@ -38,6 +43,26 @@ fn reverse(word1: (&str, &str)) -> String {
 fn analyze_slice(slice: &[i32]) {
     println!("First element of the slice: {}", slice[0]);
     println!("The slice has {} elements", slice.len());
+}
+fn click(clicks: Mouse){
+    match clicks {
+        Mouse::DoubleClick => {
+            println!(" you double clicked");
+        }
+        Mouse::TripleClick => {
+            println!("you triple clicked");
+        }
+        Mouse::ZeroClick => {
+            println!("you didnt clicked");
+        }
+    }
+}
+
+type Mouse = Clicks;
+enum Clicks{
+    DoubleClick,
+    TripleClick,
+    ZeroClick,
 }
 
 
