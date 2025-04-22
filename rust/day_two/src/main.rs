@@ -1,3 +1,5 @@
+#[allow(unused)]
+
 use crate::Clicks::{DoubleClick, ZeroClick, TripleClick};
 
 // Day 3: Exploring Rust functions
@@ -26,8 +28,34 @@ fn main() {
     println!("{:?}", omar);
     click(TripleClick);
 
+    let condtions = true;
+    if condtions {println!("true");} else { println!("false");
+    }
+    let mut n = 20;
+    if n <= 10 {
+        println!("i think n is 10, n = {}", n);
+    }
+    else if n ==20 {
+        println!("i think 20, n = {}", n);
+    }
+    else if n ==40 {
+        println!("i think 40, n = {}", n);
+    }
+    else { println!("n = {}", n); }
+    loop {
+        println!("in loop");
+        n+=1;
+        if n == 40 {
+            break;
+        }
+    }
+
+    while condtions {
+        println!("in condtions");
+    }
 
 }
+
 
 fn add(a: i32, b: i32) -> i32 {
     a + b
